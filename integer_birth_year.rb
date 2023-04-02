@@ -21,3 +21,13 @@
 # "Nice! You were born in approximately 2013."
 
 p "How old are you?"
+
+age = gets.chomp.to_i
+
+require "date"
+
+year_today = Date.today.year
+
+birth_year = year_today - age
+
+p "Nice! You were born in approximately #{birth_year}."
